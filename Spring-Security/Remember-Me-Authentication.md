@@ -11,6 +11,8 @@ remember-me 쿠키 lifecycle
 - 만료기간이 지나도 무효화된다. 
 
 ### remember-me는 언제 동작하는가
+![R1280x0](https://github.com/HandmadeCloud/programmers_devcourse_4th/assets/77893164/d5745c77-19aa-48c7-81bc-7efecdfbfd11)
+
 세션이 만료,혹은 종료 된 경우
 session 이 timeout으로 만료되거나, 브라우저가 종료되어서 세션이 끝나서 securitycontext에서 인증객체를 찾지 못하는 경우
 (물론 remember-me 설정 시간이 세션 시간보다 더 길어야 한다.)
