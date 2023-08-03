@@ -35,6 +35,9 @@ private void doFilter(HttpServletRequest request, HttpServletResponse response, 
 
 이 필터에서는 RememberMeService라는 인터페이스로 이동한다.
 ### 2단계
+RememberMeService 는 여기에서 사용되기도 하고 AbstractASuthenticationProcessingFilter에서도 사용되고 있다.
+remember-me쿠키는 : username, 만료시간, signiturevalue를 바탕으로 signitureValue가 만들어진다.
+
 실제 구현체로는 2가지가 있는데,
 1. TokenBasedRememberMeServices: 서버 메모리에 있는 쿠키와 사용자가 보내온 remember-me 쿠키를 비교한다.
 2. PersistenceTokenBasedRememberMeService: DB에 저장되어 있는 쿠키와 사용자가 보내온 remember-me 쿠키를 비교
@@ -66,7 +69,8 @@ try {
 8. 그러면 ProviderManger중 RememberMeAuthenticationProvider의 authentication메서드를 실행해 인증된 authentication을 반환한다.
 9. 자동 로그인 완성
 
-
+#### 추가 사항
+rememberMe로 로그인한 사용자는 WebSecurityConfigure의 isfullyAuthenticated()인증을 받지 못한다. 명시적으로 id password르 작성해줘야 인증받을 수 있다.
 
 
 
