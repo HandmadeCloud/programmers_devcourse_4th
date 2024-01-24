@@ -10,6 +10,10 @@
 | 주제 | 기간 | 정리 |
 |:----------:|:-----:|:---:|
 |자바 기초|2023.06.01-06.09|[Java-Story](https://github.com/HandmadeCloud/programmers_devcourse_4th/tree/main/Java-Story)
+|스프링 기초|2023.06.19-07.07|[Spring-jdbc](https://github.com/HandmadeCloud/programmers_devcourse_4th/tree/main/Spring-Jdbc)
+|스프링 JPA|2023.07.24-07.28|[Spring-JPA](https://github.com/HandmadeCloud/programmers_devcourse_4th/tree/main/Spring%20JPA)
+|스프링 security|2023.07.31-08.11|[Spring-Security](https://github.com/HandmadeCloud/programmers_devcourse_4th/tree/main/Spring-Security)
+
 
 ## 💙 미션
 | 프로젝트 제목 | 기간 | 레포지토리 | PR 및 리뷰 | 정리 |
